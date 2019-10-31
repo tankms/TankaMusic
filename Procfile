@@ -1,1 +1,1 @@
-worker: node bot.js TankaMusic
+worker: node index.js TankaMusic
