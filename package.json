@@ -1,0 +1,16 @@
+{
+  "name": "tankamusic",
+  "version": "1.0.0",
+  "description": "Discord Music Bot",
+  "main": "bot.js", 
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Tanka_136",
+  "license": "ISC",
+  "dependencies": {
+    "discord.js": "^11.5.1",
+    "opusscript": "0.0.7",
+    "ytdl-core": "^1.0.0"
+  }
+}
