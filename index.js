@@ -81,9 +81,10 @@ if(message.guild.voiceConnection){
 server.queue.splice(i, 1);
     }
     server.dispatcher.end();
-    message.channel.sendMessage('Leaving Voice Channel')
+   
     console.log('Stopped The Queue Leaving Voice Channel')
 }
+     message.channel.sendMessage('Leaving Voice Channel')
 if(!message.guild.connection) message.guild.voiceConnection.disconnect();
 
 break;
