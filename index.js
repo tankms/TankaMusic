@@ -7,7 +7,7 @@ const ytdl = require("ytdl-core");
 
 const PREFIX = '^';
 
-const at = new Attachment('./Pics/Mouse.jpg');
+
 
 var servers = {};
 
