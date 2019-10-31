@@ -19,7 +19,7 @@ bot.user.setActivity('No.6 Collaborations Project', {type: 'LISTENING'});
  
 bot.on('message', message=>{
    let args = message.content.substring(PREFIX.length).split(" ");
-   var mention = message.mentions.users.first();
+   
    switch(args[0]){
 
       
@@ -60,7 +60,7 @@ server.queue.push(args[1]);
     if(!message.guild.voiceConnection) message.member.voiceChannel.join().then(function(connection){
 
     play(connection, message);
-    message.channel.sendMessage(message + "Now Playing!")
+    message.channel.sendMessage("Now Playing!")
     })
     
     
