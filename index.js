@@ -5,7 +5,7 @@ const bot = new Client();
 const ytdl = require("ytdl-core");
 
 
- const PREFIX = '?';
+ const PREFIX = '$';
 
 
 
