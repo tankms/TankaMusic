@@ -88,7 +88,18 @@ if(!message.guild.connection) message.guild.voiceConnection.disconnect();
 
 break;
 
-       
+       case 'leave':
+        var server = servers[message.guild.id];
+        if(message.guild.voiceConnection){
+            for(var i = server.queue.length -1; i >=0; i--){
+        server.queue.splice(i, 1);
+            }
+            server.dispatcher.end();
+            message.channel.sendMessage('Leaving Voice Channel')
+            console.log('Stopped The Queue Leaving Voice Channel')
+        }
+        if(!message.guild.connection) message.guild.voiceConnection.disconnect();
+        break;
 }});  
 
 
