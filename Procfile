@@ -1,1 +1,1 @@
-worker: node index.js TankaMusic
+worker: node index.js 
